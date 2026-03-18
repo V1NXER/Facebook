@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png"
+        type="image/x-icon">
+    <title>Facebook</title>
+</head>
+
+<body id="pageTop">
+
+    <!-- ======================== TOP BAR ======================== -->
+    <header class="topbar">
+        <!-- Left: logo + search -->
+        <div class="topbar-left">
+            <a class="topbar-logo" href="#" aria-label="Facebook home">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/960px-2023_Facebook_icon.svg.png"
+                    alt="Facebook">
+            </a>
+            <div class="topbar-search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search Facebook" aria-label="Search Facebook">
+            </div>
+        </div>
+
+        <!-- Center: nav tabs -->
+        <nav class="topbar-nav">
+            <a class="nav-tab active" href="#pageTop" aria-label="Home"><i class="bi bi-house-door-fill"></i></a>
+            <button class="nav-tab" aria-label="Watch"><i class="bi bi-tv"></i></button>
+            <button class="nav-tab" aria-label="Marketplace"><i class="bi bi-shop"></i></button>
+            <button class="nav-tab" aria-label="Groups"><i class="bi bi-people-fill"></i></button>
+            <button class="nav-tab" aria-label="Gaming"><i class="bi bi-controller"></i></button>
+        </nav>
+
+        <!-- Right: icon buttons + avatar -->
+        <div class="topbar-right">
+            <button class="topbar-icon-btn" aria-label="Menu"><i class="bi bi-grid-3x3-gap-fill"></i></button>
+            <button class="topbar-icon-btn" aria-label="Messenger"><i class="bi bi-chat-dots-fill"></i></button>
+            <button class="topbar-icon-btn" aria-label="Notifications">
+                <i class="bi bi-bell-fill"></i>
+                <span class="notif-badge"></span>
+            </button>
+            <img class="topbar-avatar"
+                src="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/548021898_2535346660178374_9168165515719088271_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFSbEQWsln92p2wZN2VnjeBDU7zUW-zN9ENTvNRb7M30bUawD1DGfTQf451sikYnjRuDkXbZjqVugT-CzpyjtWQ&_nc_ohc=hdhBVXjULVwQ7kNvwFHW5md&_nc_oc=AdmCxB8BmBKiG-cRz-XMfus_6geLzMZqvFTbdlbx4NM1Z9qmeGHev8a6MsME6j_tDnsdXJ4WJmrDVyjxWLVdvJIA&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=aSEBCt6Jqw6eS0IUG8Bslg&_nc_ss=8&oh=00_AfwQlb3-XipAlA3uLCb2TdRouKijjwJCsZXo2dBs2V-BEg&oe=69BB0F26"
+                alt="Vince Sarmiento">
+        </div>
+    </header>
+
+    <!-- ======================== PAGE LAYOUT ======================== -->
+    <div class="page-layout">
+
+        <!-- ============ LEFT SIDEBAR ============ -->
+        <aside class="sidebar-left">
+            <!-- Profile link -->
+            <a class="sb-nav-item" href="#">
+                <img class="sb-icon"
+                    src="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/548021898_2535346660178374_9168165515719088271_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFSbEQWsln92p2wZN2VnjeBDU7zUW-zN9ENTvNRb7M30bUawD1DGfTQf451sikYnjRuDkXbZjqVugT-CzpyjtWQ&_nc_ohc=hdhBVXjULVwQ7kNvwFHW5md&_nc_oc=AdmCxB8BmBKiG-cRz-XMfus_6geLzMZqvFTbdlbx4NM1Z9qmeGHev8a6MsME6j_tDnsdXJ4WJmrDVyjxWLVdvJIA&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=aSEBCt6Jqw6eS0IUG8Bslg&_nc_ss=8&oh=00_AfwQlb3-XipAlA3uLCb2TdRouKijjwJCsZXo2dBs2V-BEg&oe=69BB0F26"
+                    alt="Vince">
+                <span>Vince</span>
+            </a>
+            <a class="sb-nav-item" href="#">
+                <div class="sb-icon-fa" style="background:#e7f3ff;color:#1877f2;"><i class="bi bi-people-fill"></i>
+                </div>
+                <span>Friends</span>
+            </a>
+            <a class="sb-nav-item" href="#">
+                <div class="sb-icon-fa" style="background:#fce8ff;color:#9b59b6;"><i class="bi bi-clock-history"></i>
+                </div>
+                <span>Memories</span>
+            </a>
+            <a class="sb-nav-item" href="#">
+                <div class="sb-icon-fa" style="background:#fff3e0;color:#e67e22;"><i class="bi bi-bookmark-fill"></i>
+                </div>
+                <span>Saved</span>
+            </a>
+            <a class="sb-nav-item" href="#">
+                <div class="sb-icon-fa" style="background:#e8f8e8;color:#27ae60;"><i class="bi bi-people-fill"></i>
+                </div>
+                <span>Groups</span>
+            </a>
+            <a class="sb-nav-item" href="#">
+                <div class="sb-icon-fa" style="background:#fdecea;color:#e74c3c;"><i class="bi bi-film"></i></div>
+                <span>Reels</span>
+            </a>
+            <a class="sb-nav-item" href="#">
+                <div class="sb-icon-fa" style="background:#e3f2fd;color:#2196f3;"><i class="bi bi-shop"></i></div>
+                <span>Marketplace</span>
+            </a>
+            <a class="sb-nav-item" href="#">
+                <div class="sb-icon-fa" style="background:#f3e5f5;color:#9c27b0;"><i class="bi bi-rss-fill"></i></div>
+                <span>Feeds</span>
+            </a>
+            <a class="sb-nav-item" href="#">
+                <div class="sb-icon-fa"><i class="bi bi-chevron-down"></i></div>
+                <span>See more</span>
+            </a>
+
+            <div class="sb-divider"></div>
+
+            <div class="sb-section-label">Your shortcuts</div>
+
+            <a class="sb-shortcut-item" href="#">
+                <img src="https://picsum.photos/seed/ucc-ph/80/80" alt="University of Caloocan">
+                <span>University of Caloocan (UCC)</span>
+            </a>
+            <a class="sb-shortcut-item" href="#">
+                <img src="https://picsum.photos/seed/8ball/80/80" alt="8 Ball Pool">
+                <span>8 Ball Pool</span>
+            </a>
+            <a class="sb-shortcut-item" href="#">
+                <img src="https://picsum.photos/seed/agario/80/80" alt="Agar.io">
+                <span>Agar.io</span>
+            </a>
+            <a class="sb-shortcut-item" href="#">
+                <img src="https://picsum.photos/seed/blackjack/80/80" alt="Blackjack">
+                <span>Blackjack</span>
+            </a>
+            <a class="sb-shortcut-item" href="#">
+                <img src="https://picsum.photos/seed/candycrush/80/80" alt="Candy Crush Saga">
+                <span>Candy Crush Saga</span>
+            </a>
+            <a class="sb-nav-item" href="#">
+                <div class="sb-icon-fa"><i class="bi bi-chevron-down"></i></div>
+                <span>See more</span>
+            </a>
+
+            <div class="sb-footer">
+                <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Advertising</a> ·
+                <a href="#">Ad Choices</a> · <a href="#">Cookies</a> · <a href="#">More</a><br>
+                Facebook © 2026
+            </div>
+        </aside>
+
+        <!-- ============ FEED CENTER ============ -->
+        <main class="feed-center">
+
+            <!-- Create post bar -->
+            <div class="create-post-bar">
+                <div class="create-post-top">
+                    <img src="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/548021898_2535346660178374_9168165515719088271_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFSbEQWsln92p2wZN2VnjeBDU7zUW-zN9ENTvNRb7M30bUawD1DGfTQf451sikYnjRuDkXbZjqVugT-CzpyjtWQ&_nc_ohc=hdhBVXjULVwQ7kNvwFHW5md&_nc_oc=AdmCxB8BmBKiG-cRz-XMfus_6geLzMZqvFTbdlbx4NM1Z9qmeGHev8a6MsME6j_tDnsdXJ4WJmrDVyjxWLVdvJIA&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=aSEBCt6Jqw6eS0IUG8Bslg&_nc_ss=8&oh=00_AfwQlb3-XipAlA3uLCb2TdRouKijjwJCsZXo2dBs2V-BEg&oe=69BB0F26"
+                        alt="Vince">
+                    <input class="create-post-input" type="text" placeholder="What's on your mind, Vince?" readonly>
+                </div>
+                <div class="create-post-divider"></div>
+                <div class="create-post-actions">
+                    <button class="cp-action-btn"><i class="bi bi-camera-video-fill live-icon"></i> Live video</button>
+                    <button class="cp-action-btn"><i class="bi bi-image-fill photo-icon"></i> Photo/video</button>
+                    <button class="cp-action-btn"><i class="bi bi-emoji-smile-fill room-icon"></i>
+                        Feeling/activity</button>
+                </div>
+            </div>
+
+            <!-- Stories -->
+            <div class="stories-row">
+                <div class="stories-header">
+                    <span class="stories-header-title">Stories</span>
+                    <div class="stories-header-links">
+                        <a href="#">Create story</a>
+                        <a href="#">See all</a>
+                    </div>
+                </div>
+                <div class="stories-track">
+                    <!-- Add story card -->
+                    <div class="story-card"
+                        style="background-image:url('https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/548021898_2535346660178374_9168165515719088271_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFSbEQWsln92p2wZN2VnjeBDU7zUW-zN9ENTvNRb7M30bUawD1DGfTQf451sikYnjRuDkXbZjqVugT-CzpyjtWQ&_nc_ohc=hdhBVXjULVwQ7kNvwFHW5md&_nc_oc=AdmCxB8BmBKiG-cRz-XMfus_6geLzMZqvFTbdlbx4NM1Z9qmeGHev8a6MsME6j_tDnsdXJ4WJmrDVyjxWLVdvJIA&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=aSEBCt6Jqw6eS0IUG8Bslg&_nc_ss=8&oh=00_AfwQlb3-XipAlA3uLCb2TdRouKijjwJCsZXo2dBs2V-BEg&oe=69BB0F26');">
+                        <button class="story-add-btn" aria-label="Create story"><i class="bi bi-plus"></i></button>
+                        <span class="story-name">Create story</span>
+                    </div>
+                    <div class="story-card"
+                        style="background-image:url('https://loremflickr.com/600/900/motorcycle,scooter?lock=102');">
+                        <div class="story-avatar-wrap">
+                            <img src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t39.30808-6/557679789_2062011241206724_4487172751432259665_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeGqs8qBO3bF8Hsf5iG0xEJSOy6ErrmAVrM7LoSuuYBWsybTus6Kp7F6a-n835dHONtSQp3pmSFgYy_plRkBEdPT&_nc_ohc=6TM4QOHHWJwQ7kNvwGlbqoK&_nc_oc=AdkojvgEYmAmGWUqBR_wECnqGneNEGcy4CJINXNgbOU_xpeDXcgLj8HDkSNx9b5DJMQ2zPVcQo5BkgjIEHem_UHe&_nc_zt=23&_nc_ht=scontent.fcrk3-1.fna&_nc_gid=7wntGFVlrHHt7AW_6BwibQ&_nc_ss=8&oh=00_AfxoBQJkClxKfczMSrECnx0VeG2A8owq59UCgowx6Ov7Dg&oe=69BB3B0D"
+                                alt="Robert">
+                        </div>
+                        <span class="story-name">Robert Evangelista</span>
+                    </div>
+                    <div class="story-card"
+                        style="background-image:url('https://loremflickr.com/600/900/motorcycle,yamaha?lock=103');">
+                        <div class="story-avatar-wrap">
+                            <img src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t39.30808-6/483913992_9969114239774438_3951258591269832768_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeG_ygWU6wJQUjL9HrhdjvFT5RkpFk0az9PlGSkWTRrP03IsstIbTX-wfaNQC7aIatc8bvuCPxnWfXP6QKr225Cq&_nc_ohc=iZTj3jwfAKEQ7kNvwFSbzLk&_nc_oc=AdltwdgJQCOhQpPc77BIaW6VX3JUt4o-ug7Dh4PD_ouTdP5nb-J81kf4RuorcHG1dk-FbjRza16QDvvjTYrWTTQ0&_nc_zt=23&_nc_ht=scontent.fcrk3-1.fna&_nc_gid=c5v_MNDsARSMGCeK3bE57Q&_nc_ss=8&oh=00_AfxK1JUuxnKaMLDw3WETImB_9W8SUWjno-sR--8M_dVALg&oe=69BB3417"
+                                alt="Vlladimir">
+                        </div>
+                        <span class="story-name">Vlladimir Salazar</span>
+                    </div>
+                    <div class="story-card"
+                        style="background-image:url('https://loremflickr.com/600/900/motorcycle,streetbike?lock=104');">
+                        <div class="story-avatar-wrap">
+                            <img src="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/463828683_9071677519529163_5647821445236396858_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEhc5I7rHDsstwoyBXyCfnW679SyKUjKz_rv1LIpSMrP27ooDoazH7AZVMDs-ggED0XWdWWQVI3kczpE3IMjssb&_nc_ohc=OG2xbL2pREYQ7kNvwFh298e&_nc_oc=AdljLGxJuS0awngvc8yGSMvv9eerKhpm5eycgIZoGXwotAXVASs2ybqX3UfMoPhKf4Xf4labWEjIy0-TDIOKRTrk&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=hYRV4wHg2K31KsnfAbTfwA&_nc_ss=8&oh=00_Afy63JGAojmrl5DtSnsCL2WfmPNll4BfKIPa7FPVjFIcVA&oe=69BB3BD5"
+                                alt="Santino">
+                        </div>
+                        <span class="story-name">Santino Abo</span>
+                    </div>
+                    <div class="story-card"
+                        style="background-image:url('https://loremflickr.com/600/900/motorcycle,blackbike?lock=105');">
+                        <div class="story-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80"
+                                alt="Earl">
+                        </div>
+                        <span class="story-name">Earl Hunat</span>
+                    </div>
+                    <div class="story-card"
+                        style="background-image:url('https://loremflickr.com/600/900/motorcycle,orangebike?lock=106');">
+                        <div class="story-avatar-wrap">
+                            <img src="https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&w=120&q=80"
+                                alt="James">
+                        </div>
+                        <span class="story-name">James Tuazon</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POST 1 -->
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t39.30808-6/557679789_2062011241206724_4487172751432259665_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeGqs8qBO3bF8Hsf5iG0xEJSOy6ErrmAVrM7LoSuuYBWsybTus6Kp7F6a-n835dHONtSQp3pmSFgYy_plRkBEdPT&_nc_ohc=6TM4QOHHWJwQ7kNvwGlbqoK&_nc_oc=AdkojvgEYmAmGWUqBR_wECnqGneNEGcy4CJINXNgbOU_xpeDXcgLj8HDkSNx9b5DJMQ2zPVcQo5BkgjIEHem_UHe&_nc_zt=23&_nc_ht=scontent.fcrk3-1.fna&_nc_gid=7wntGFVlrHHt7AW_6BwibQ&_nc_ss=8&oh=00_AfxoBQJkClxKfczMSrECnx0VeG2A8owq59UCgowx6Ov7Dg&oe=69BB3B0D"
+                            alt="Robert">
+                        <div>
+                            <div class="post-author-name">Robert Evangelista</div>
+                            <div class="post-meta">2 hours ago <i class="bi bi-globe2"></i></div>
+                        </div>
+                    </div>
+                    <div class="post-header-actions">
+                        <button class="post-icon-btn"><i class="bi bi-three-dots"></i></button>
+                        <button class="post-icon-btn"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+                <p class="post-text">Hi Facebookers. Vince Sarmiento and the PH riders squad just had a quick night ride
+                    around Metro Manila. Which bike setup do you like most? <a href="#">#RidersPH #MotorcycleLife</a>
+                </p>
+                <div class="post-image-grid">
+                    <img class="large"
+                        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=700&q=80"
+                        alt="">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=500&q=80"
+                        alt="">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=500&q=80"
+                        alt="">
+                </div>
+                <div class="post-stats">
+                    <div class="reactions">
+                        <div class="react-icons"><span class="like"><i
+                                    class="bi bi-hand-thumbs-up-fill"></i></span><span class="love"><i
+                                    class="bi bi-heart-fill"></i></span></div>
+                        25K
+                    </div>
+                    <div>98 Comments · 250 Shares</div>
+                </div>
+                <div class="post-actions-bar">
+                    <button class="post-action-btn"><i class="bi bi-hand-thumbs-up"></i> Like</button>
+                    <button class="post-action-btn"><i class="bi bi-chat"></i> Comment</button>
+                    <button class="post-action-btn"><i class="bi bi-share"></i> Share</button>
+                </div>
+            </article>
+
+            <!-- POST 2 -->
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t39.30808-6/483913992_9969114239774438_3951258591269832768_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeG_ygWU6wJQUjL9HrhdjvFT5RkpFk0az9PlGSkWTRrP03IsstIbTX-wfaNQC7aIatc8bvuCPxnWfXP6QKr225Cq&_nc_ohc=iZTj3jwfAKEQ7kNvwFSbzLk&_nc_oc=AdltwdgJQCOhQpPc77BIaW6VX3JUt4o-ug7Dh4PD_ouTdP5nb-J81kf4RuorcHG1dk-FbjRza16QDvvjTYrWTTQ0&_nc_zt=23&_nc_ht=scontent.fcrk3-1.fna&_nc_gid=c5v_MNDsARSMGCeK3bE57Q&_nc_ss=8&oh=00_AfxK1JUuxnKaMLDw3WETImB_9W8SUWjno-sR--8M_dVALg&oe=69BB3417"
+                            alt="Vlladimir">
+                        <div>
+                            <div class="post-author-name">Vlladimir Salazar</div>
+                            <div class="post-meta">5 hours ago <i class="bi bi-globe2"></i></div>
+                        </div>
+                    </div>
+                    <div class="post-header-actions">
+                        <button class="post-icon-btn"><i class="bi bi-three-dots"></i></button>
+                        <button class="post-icon-btn"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+                <p class="post-text">Quick stop at Marilaque this morning. Fazzio setup is running smooth. <a
+                        href="#">#FazzioPH #SundayRide</a></p>
+                <div class="post-image-grid">
+                    <img class="large" src="https://loremflickr.com/700/900/motorcycle,road?lock=201" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,helmet?lock=202" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,night?lock=203" alt="">
+                </div>
+                <div class="post-stats">
+                    <div class="reactions">
+                        <div class="react-icons"><span class="like"><i class="bi bi-hand-thumbs-up-fill"></i></span>
+                        </div>
+                        8.7K
+                    </div>
+                    <div>320 Comments · 74 Shares</div>
+                </div>
+                <div class="post-actions-bar">
+                    <button class="post-action-btn"><i class="bi bi-hand-thumbs-up"></i> Like</button>
+                    <button class="post-action-btn"><i class="bi bi-chat"></i> Comment</button>
+                    <button class="post-action-btn"><i class="bi bi-share"></i> Share</button>
+                </div>
+            </article>
+
+            <!-- POST 3 -->
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/463828683_9071677519529163_5647821445236396858_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEhc5I7rHDsstwoyBXyCfnW679SyKUjKz_rv1LIpSMrP27ooDoazH7AZVMDs-ggED0XWdWWQVI3kczpE3IMjssb&_nc_ohc=OG2xbL2pREYQ7kNvwFh298e&_nc_oc=AdljLGxJuS0awngvc8yGSMvv9eerKhpm5eycgIZoGXwotAXVASs2ybqX3UfMoPhKf4Xf4labWEjIy0-TDIOKRTrk&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=hYRV4wHg2K31KsnfAbTfwA&_nc_ss=8&oh=00_Afy63JGAojmrl5DtSnsCL2WfmPNll4BfKIPa7FPVjFIcVA&oe=69BB3BD5"
+                            alt="Santino">
+                        <div>
+                            <div class="post-author-name">Santino Abo</div>
+                            <div class="post-meta">6 hours ago <i class="bi bi-globe2"></i></div>
+                        </div>
+                    </div>
+                    <div class="post-header-actions">
+                        <button class="post-icon-btn"><i class="bi bi-three-dots"></i></button>
+                        <button class="post-icon-btn"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+                <p class="post-text">Mio M3 green and blue build update. New decals installed today. <a href="#">#MioM3
+                        #ProjectBike</a></p>
+                <div class="post-image-grid">
+                    <img class="large" src="https://loremflickr.com/700/900/motorcycle,yamaha?lock=204" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,garage?lock=205" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,wheel?lock=206" alt="">
+                </div>
+                <div class="post-stats">
+                    <div class="reactions">
+                        <div class="react-icons"><span class="like"><i class="bi bi-hand-thumbs-up-fill"></i></span>
+                        </div>
+                        6.2K
+                    </div>
+                    <div>211 Comments · 61 Shares</div>
+                </div>
+                <div class="post-actions-bar">
+                    <button class="post-action-btn"><i class="bi bi-hand-thumbs-up"></i> Like</button>
+                    <button class="post-action-btn"><i class="bi bi-chat"></i> Comment</button>
+                    <button class="post-action-btn"><i class="bi bi-share"></i> Share</button>
+                </div>
+            </article>
+
+            <!-- POST 4 -->
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?auto=format&fit=crop&w=120&q=80"
+                            alt="Miguel">
+                        <div>
+                            <div class="post-author-name">Miguel Reyes</div>
+                            <div class="post-meta">8 hours ago <i class="bi bi-globe2"></i></div>
+                        </div>
+                    </div>
+                    <div class="post-header-actions">
+                        <button class="post-icon-btn"><i class="bi bi-three-dots"></i></button>
+                        <button class="post-icon-btn"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+                <p class="post-text">First long ride with the crew from Quezon City to Tagaytay. Solid weather. <a
+                        href="#">#RideSafePH #WeekendRun</a></p>
+                <div class="post-image-grid">
+                    <img class="large" src="https://loremflickr.com/700/900/motorcycle,highway?lock=207" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,group?lock=208" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,sunset?lock=209" alt="">
+                </div>
+                <div class="post-stats">
+                    <div class="reactions">
+                        <div class="react-icons"><span class="like"><i class="bi bi-hand-thumbs-up-fill"></i></span>
+                        </div>
+                        11K
+                    </div>
+                    <div>412 Comments · 133 Shares</div>
+                </div>
+                <div class="post-actions-bar">
+                    <button class="post-action-btn"><i class="bi bi-hand-thumbs-up"></i> Like</button>
+                    <button class="post-action-btn"><i class="bi bi-chat"></i> Comment</button>
+                    <button class="post-action-btn"><i class="bi bi-share"></i> Share</button>
+                </div>
+            </article>
+
+            <!-- POST 5 -->
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=120&q=80"
+                            alt="Carlo">
+                        <div>
+                            <div class="post-author-name">Carlo Mendoza</div>
+                            <div class="post-meta">10 hours ago <i class="bi bi-globe2"></i></div>
+                        </div>
+                    </div>
+                    <div class="post-header-actions">
+                        <button class="post-icon-btn"><i class="bi bi-three-dots"></i></button>
+                        <button class="post-icon-btn"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+                <p class="post-text">Night detailing session. Clean chain, fresh wax, ready for tomorrow. <a
+                        href="#">#BikeCare #RidersPH</a></p>
+                <div class="post-image-grid">
+                    <img class="large" src="https://loremflickr.com/700/900/motorcycle,workshop?lock=210" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,tools?lock=211" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,clean?lock=212" alt="">
+                </div>
+                <div class="post-stats">
+                    <div class="reactions">
+                        <div class="react-icons"><span class="like"><i class="bi bi-hand-thumbs-up-fill"></i></span>
+                        </div>
+                        4.9K
+                    </div>
+                    <div>175 Comments · 40 Shares</div>
+                </div>
+                <div class="post-actions-bar">
+                    <button class="post-action-btn"><i class="bi bi-hand-thumbs-up"></i> Like</button>
+                    <button class="post-action-btn"><i class="bi bi-chat"></i> Comment</button>
+                    <button class="post-action-btn"><i class="bi bi-share"></i> Share</button>
+                </div>
+            </article>
+
+            <!-- POST 6 -->
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://scontent.fcrk3-1.fna.fbcdn.net/v/t39.30808-6/557679789_2062011241206724_4487172751432259665_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeGqs8qBO3bF8Hsf5iG0xEJSOy6ErrmAVrM7LoSuuYBWsybTus6Kp7F6a-n835dHONtSQp3pmSFgYy_plRkBEdPT&_nc_ohc=6TM4QOHHWJwQ7kNvwGlbqoK&_nc_oc=AdkojvgEYmAmGWUqBR_wECnqGneNEGcy4CJINXNgbOU_xpeDXcgLj8HDkSNx9b5DJMQ2zPVcQo5BkgjIEHem_UHe&_nc_zt=23&_nc_ht=scontent.fcrk3-1.fna&_nc_gid=7wntGFVlrHHt7AW_6BwibQ&_nc_ss=8&oh=00_AfxoBQJkClxKfczMSrECnx0VeG2A8owq59UCgowx6Ov7Dg&oe=69BB3B0D"
+                            alt="Robert">
+                        <div>
+                            <div class="post-author-name">Robert Evangelista</div>
+                            <div class="post-meta">12 hours ago <i class="bi bi-globe2"></i></div>
+                        </div>
+                    </div>
+                    <div class="post-header-actions">
+                        <button class="post-icon-btn"><i class="bi bi-three-dots"></i></button>
+                        <button class="post-icon-btn"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+                <p class="post-text">Honda PCX fuel test result: 47km/L on mixed city and highway route. <a
+                        href="#">#PCX #FuelEfficiency</a></p>
+                <div class="post-image-grid">
+                    <img class="large" src="https://loremflickr.com/700/900/motorcycle,honda?lock=213" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,dashboard?lock=214" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,parking?lock=215" alt="">
+                </div>
+                <div class="post-stats">
+                    <div class="reactions">
+                        <div class="react-icons"><span class="like"><i class="bi bi-hand-thumbs-up-fill"></i></span>
+                        </div>
+                        7.4K
+                    </div>
+                    <div>263 Comments · 82 Shares</div>
+                </div>
+                <div class="post-actions-bar">
+                    <button class="post-action-btn"><i class="bi bi-hand-thumbs-up"></i> Like</button>
+                    <button class="post-action-btn"><i class="bi bi-chat"></i> Comment</button>
+                    <button class="post-action-btn"><i class="bi bi-share"></i> Share</button>
+                </div>
+            </article>
+
+            <!-- POST 7 -->
+            <article class="post-card">
+                <div class="post-header">
+                    <div class="post-author">
+                        <img src="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/548021898_2535346660178374_9168165515719088271_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFSbEQWsln92p2wZN2VnjeBDU7zUW-zN9ENTvNRb7M30bUawD1DGfTQf451sikYnjRuDkXbZjqVugT-CzpyjtWQ&_nc_ohc=hdhBVXjULVwQ7kNvwFHW5md&_nc_oc=AdmCxB8BmBKiG-cRz-XMfus_6geLzMZqvFTbdlbx4NM1Z9qmeGHev8a6MsME6j_tDnsdXJ4WJmrDVyjxWLVdvJIA&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=aSEBCt6Jqw6eS0IUG8Bslg&_nc_ss=8&oh=00_AfwQlb3-XipAlA3uLCb2TdRouKijjwJCsZXo2dBs2V-BEg&oe=69BB0F26"
+                            alt="Vince">
+                        <div>
+                            <div class="post-author-name">Vince Sarmiento</div>
+                            <div class="post-meta">14 hours ago <i class="bi bi-globe2"></i></div>
+                        </div>
+                    </div>
+                    <div class="post-header-actions">
+                        <button class="post-icon-btn"><i class="bi bi-three-dots"></i></button>
+                        <button class="post-icon-btn"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+                <p class="post-text">Raider FI check-in before tomorrow's dawn ride. Meet up at 4:30AM. <a
+                        href="#">#RaiderFI #NorthLoopSoon</a></p>
+                <div class="post-image-grid">
+                    <img class="large" src="https://loremflickr.com/700/900/motorcycle,suzuki?lock=216" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,gloves?lock=217" alt="">
+                    <img src="https://loremflickr.com/500/500/motorcycle,team?lock=218" alt="">
+                </div>
+                <div class="post-stats">
+                    <div class="reactions">
+                        <div class="react-icons"><span class="like"><i
+                                    class="bi bi-hand-thumbs-up-fill"></i></span><span class="love"><i
+                                    class="bi bi-heart-fill"></i></span></div>
+                        12K
+                    </div>
+                    <div>520 Comments · 190 Shares</div>
+                </div>
+                <div class="post-actions-bar">
+                    <button class="post-action-btn"><i class="bi bi-hand-thumbs-up"></i> Like</button>
+                    <button class="post-action-btn"><i class="bi bi-chat"></i> Comment</button>
+                    <button class="post-action-btn"><i class="bi bi-share"></i> Share</button>
+                </div>
+            </article>
+
+        </main>
+
+        <!-- ============ RIGHT SIDEBAR ============ -->
+        <aside class="sidebar-right">
+
+            <!-- Friend Requests -->
+            <div class="rw-section-header">
+                <span class="rw-section-title">Friend requests</span>
+                <a class="rw-see-all" href="#">See all</a>
+            </div>
+
+            <div class="fr-card">
+                <img src="https://scontent.fcrk3-4.fna.fbcdn.net/v/t39.30808-6/463828683_9071677519529163_5647821445236396858_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEhc5I7rHDsstwoyBXyCfnW679SyKUjKz_rv1LIpSMrP27ooDoazH7AZVMDs-ggED0XWdWWQVI3kczpE3IMjssb&_nc_ohc=OG2xbL2pREYQ7kNvwFh298e&_nc_oc=AdljLGxJuS0awngvc8yGSMvv9eerKhpm5eycgIZoGXwotAXVASs2ybqX3UfMoPhKf4Xf4labWEjIy0-TDIOKRTrk&_nc_zt=23&_nc_ht=scontent.fcrk3-4.fna&_nc_gid=hYRV4wHg2K31KsnfAbTfwA&_nc_ss=8&oh=00_Afy63JGAojmrl5DtSnsCL2WfmPNll4BfKIPa7FPVjFIcVA&oe=69BB3BD5"
+                    alt="Antero">
+                <div class="fr-info">
+                    <div class="fr-name">Santino Dela Pena Abo</div>
+                    <div class="fr-mutual"><i class="bi bi-people-fill"></i> 20 mutual friends</div>
+                    <div class="fr-btn-row">
+                        <button class="btn-confirm">Confirm</button>
+                        <button class="btn-delete">Delete</button>
+                    </div>
+                </div>
+                <span class="fr-time">5d</span>
+            </div>
+
+            <div class="rw-divider"></div>
+
+            <!-- Birthdays -->
+            <div class="rw-section-header">
+                <span class="rw-section-title">Birthdays</span>
+            </div>
+            <div class="birthday-row">
+                <span class="birthday-icon">🎁</span>
+                <div class="birthday-text"><strong>CJ Batumbakal</strong> and <strong>3 others</strong> have birthdays
+                    today.</div>
+            </div>
+
+            <div class="rw-divider"></div>
+
+            <!-- Contacts -->
+            <div class="rw-contacts-header">
+                <span class="rw-contacts-title">Contacts</span>
+                <div class="rw-contacts-actions">
+                    <button class="rw-icon-btn" aria-label="Search contacts"><i class="bi bi-search"></i></button>
+                    <button class="rw-icon-btn" aria-label="Options"><i class="bi bi-three-dots"></i></button>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-avatar-wrap">
+                    <img src="https://brandlogos.net/wp-content/uploads/2025/08/meta_ai-logo_brandlogos.net_xjwry.png"
+                        alt="Meta AI">
+                    <span class="online-dot" style="background:#1877f2;"></span>
+                </div>
+                <span class="contact-name">Meta AI <i class="bi bi-patch-check-fill"
+                        style="color:#1877f2;font-size:0.78rem;"></i></span>
+            </div>
+
+            <div class="rw-divider"></div>
+
+            <!-- Group Chats -->
+            <div class="rw-contacts-header">
+                <span class="rw-contacts-title">Group chats</span>
+            </div>
+
+            <div class="group-chat-item">
+                <img src="https://picsum.photos/seed/riders1a/80/80" alt="1A Riders">
+                <span class="group-chat-name">1A Riders 🏍</span>
+            </div>
+            <div class="group-chat-item">
+                <img src="https://picsum.photos/seed/javasex/80/80" alt="Java Sex">
+                <span class="group-chat-name">Java Swing : Prog 2</span>
+            </div>
+            <div class="group-chat-item">
+                <img src="https://picsum.photos/seed/bsit1a/80/80" alt="BSIT">
+                <span class="group-chat-name" style="font-variant:small-caps;letter-spacing:0.04em;">BSIT 1-A
+                    CONGRESS</span>
+            </div>
+
+            <button class="create-group-btn">
+                <div class="create-group-icon"><i class="bi bi-plus"></i></div>
+
+                Create group chat
+            </button>
+
+        </aside>
+
+    </div><!-- end .page-layout -->
+
+</body>
+
+</html>
